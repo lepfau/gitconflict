@@ -10,6 +10,7 @@ app.set("view engine", "hbs");
 app.get("/", (request, response) => {
     response.render("index");
   });
+
   app.get("/about", (request, response) => {
     response.render("about");
   });
