@@ -107,6 +107,7 @@ nav {
   width: 350px;
   height: auto;
   margin: 20px;
+  border: dotted 10px red;
 }
 
 .albumPart {
@@ -119,6 +120,10 @@ nav {
   .albumPart {
     flex-direction: column;
     align-items: center;
+  }
+
+  .aboutText {
+    min-width: 200px;
   }
 }
 
