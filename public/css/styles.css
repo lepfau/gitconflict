@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  background-color: black;
+  background-image: url("/img/background.jpg");
+}
+
+nav a {
+  color: red;
+  font-size: 1.3em;
+  margin: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+}
+
+p {
+  color: white;
+  margin: 20px;
+  font-size: 2em;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  font-size: 4em;
+  margin: 40px;
+  text-align: center;
+  border: 5px dotted red;
+  max-width: 800px;
+  min-width: 300px;
+  width: auto;
+  height: auto;
+}
+
+.titleHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 
+.subHome {
+  display: flex;
+  justify-content: center;
+} */
+
+.kanyeImg {
+  height: 150px;
+  width: auto;
+  background-color: transparent;
+  border: none;
+}
