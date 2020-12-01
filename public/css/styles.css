@@ -20,6 +20,7 @@ nav a {
 nav {
   display: flex;
   justify-content: flex-start;
+  background-color: orange;
 }
 
 .homeText {
@@ -31,9 +32,10 @@ nav {
 
 .aboutText {
   color: white;
-  margin: 20px;
-  font-size: 2em;
   text-align: center;
+  margin-top: 20px;
+  font-size: 1.5em;
+  width: auto;
 }
 
 ul {
@@ -91,3 +93,43 @@ h1 {
     height: 180px;
   }
 } */
+
+.titleAbout {
+  margin: 50px auto 50px 15px;
+  border: white solid 2px;
+  background-color: black;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.titleAbout h2 {
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  margin: 10px;
+}
+
+.albumImg {
+  width: 350px;
+  height: auto;
+  margin: 20px;
+}
+
+.albumPart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media (max-width: 800px) {
+  .albumPart {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.albumTitle {
+  color: white;
+  text-align: center;
+  font-size: 2em;
+}
