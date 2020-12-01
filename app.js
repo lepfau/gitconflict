@@ -8,15 +8,18 @@ app.set("views", __dirname +"/views");
 app.set("view engine", "hbs");
 
 app.get("/", (request, response) => {
-    response.render("index");
+    response.render("index", {
+      pageTitle:"Kanye Home"
+    });
   });
 
+
   app.get("/about", (request, response) => {
-    response.render("about");
+    response.render("about", {
+      pageTitle: "About God"
+    });
   });
-  app.get("/works", (request, response) => {
-    response.render("works");
-  });
+
 
 app.listen(4000, () => {
     console.log(`Example app listening at http://localhost:4000`)
