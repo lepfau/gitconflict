@@ -2,18 +2,21 @@ const express = require ("express")
 const app = express()
 const hbs = require("hbs")
 
+app.use (express.static(__dirname + "/public"));
 
+app.set("views", __dirname +"/views");
+app.set("view engine", "hbs");
 
 app.get("/", (request, response) => {
-    response.sendFile(__dirname + "/views/index.html");
+    response.render("index");
   });
   app.get("/about", (request, response) => {
-    response.sendFile(__dirname + "/views/about.html");
+    response.render("about");
   });
   app.get("/works", (request, response) => {
-    response.sendFile(__dirname + "/views/works.html");
+    response.render("works");
   });
 
-app.listen(3000, () => {
-    console.log(`Example app listening at http://localhost:3000`)
+app.listen(4000, () => {
+    console.log(`Example app listening at http://localhost:4000`)
   })
