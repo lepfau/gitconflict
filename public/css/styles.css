@@ -14,6 +14,7 @@ nav a {
   color: red;
   font-size: 1.3em;
   margin: 10px;
+  text-decoration: none;
 }
 
 nav {
@@ -21,11 +22,29 @@ nav {
   justify-content: flex-start;
 }
 
-p {
+.homeText {
   color: white;
   margin: 20px;
   font-size: 2em;
   text-align: center;
+}
+
+.aboutText {
+  color: white;
+  margin: 20px;
+  font-size: 2em;
+  text-align: center;
+}
+
+ul {
+  color: white;
+  margin: 20px;
+  font-size: 2em;
+  list-style-type: none;
+}
+
+li {
+  margin: 20px;
 }
 
 h1 {
@@ -33,7 +52,7 @@ h1 {
   font-size: 4em;
   margin: 40px;
   text-align: center;
-  border: 5px dotted red;
+  border: 10px double yellow;
   max-width: 800px;
   min-width: 300px;
   width: auto;
@@ -41,6 +60,7 @@ h1 {
 }
 
 .titleHome {
+  margin: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,8 +72,22 @@ h1 {
 } */
 
 .kanyeImg {
-  height: 150px;
+  height: 200px;
   width: auto;
-  background-color: transparent;
+  background: transparent;
   border: none;
+  /* animation: move infinite 3s linear; */
 }
+/* 
+@keyframes move {
+  0% {
+    height: 180px;
+  }
+  50% {
+    height: 200px;
+  }
+
+  100% {
+    height: 180px;
+  }
+} */
