@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Texturina:wght@100&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -5,7 +7,7 @@
 }
 
 body {
-  font-family: Arial;
+  font-family: Texturina;
   background-color: black;
   background-image: url("/img/background.jpg");
 }
